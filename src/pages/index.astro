@@ -1,9 +1,13 @@
 ---
+import ArrowUp from "/svg/arrow-up-right.svg?raw";
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "Hello.";
+const pageTitle = "Home Page";
 ---
 <BaseLayout pageTitle={pageTitle}>
+  <h1 class="hello">Hello.</h1>
+
   <h2>I’m Rita Costa, a UX/UI Designer based in Lisbon.</h2>
+
   <p>Currently, I'm interning at VML and pursuing a post-graduate degree in Digital Experience Design at the Faculty of Fine 
     Arts in Lisbon. I have a degree in Design and previous experience as a graphic designer at Associação Portuguesa da Cor. 
     My skills are both creative and practical, with a strong focus on customer needs, and I am known for my communicative 
@@ -13,6 +17,7 @@ const pageTitle = "Hello.";
     creativity contests like D&AD and Brief Aberto CCP. Passionate about illustration and design, I love to travel, 
     experience different cultures, and seek new challenges to step out of my comfort zone.</p>
 
-    <button class="button">Resume</button>
-
+  <a class="resume">Resume
+    <Fragment set:html={ArrowUp}/>
+  </a>
 </BaseLayout>
