@@ -1,6 +1,9 @@
+  /* custom fonts */
+  @import url('https://fonts.cdnfonts.com/css/metropolis-2');
+  
 html {
-    background-color: #f1f5f9;
-    font-family: sans-serif;
+    background-color: #ffff;
+    font-family: 'Metropolis', sans-serif;
   }
   
   body {
@@ -9,6 +12,7 @@ html {
     max-width: 80ch;
     padding: 1rem;
     line-height: 1.5;
+    font-weight: 400;
   }
   
   * {
@@ -20,6 +24,23 @@ html {
     font-size: 2.5rem;
   }
 
+  h2 {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .button {
+    margin: 2rem 0;
+    border: 1.5px solid;  
+    background: #ffff;
+    font-family: 'Metropolis', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 25px;
+    width: 120px;
+    height: 40px;
+  }
   /* nav styles */
 
   .hamburger {
