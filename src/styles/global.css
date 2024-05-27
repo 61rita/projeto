@@ -116,7 +116,6 @@ html {
 
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
     display: block;
     position: static;
     width: auto;
@@ -125,7 +124,7 @@ html {
 
   .nav-links a {
     display: inline-block;
-    padding: 15px 20px;
+    padding: 15px;
   }
   
   .hamburger {
