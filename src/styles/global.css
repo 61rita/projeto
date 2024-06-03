@@ -25,11 +25,13 @@
     font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
     }
   
-html {
+  html {
     background-color: #ffff;
     font-family: 'proxima-nova', sans-serif;
-  }
+    }
   
+  @media screen and (min-width: 320px){
+
   body {
     margin: 0 auto;
     width: 100%;
@@ -59,9 +61,9 @@ html {
     font-weight: 400;
   }
 
-  /* homepage */
+  /* about */
   .resume {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     margin: 2rem 0;    
@@ -70,6 +72,75 @@ html {
     border-radius: 25px;
     width: 8rem;
     height: 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .pdf {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;    
+    border: 1.5px solid;  
+    font-size: 1.2rem;
+    border-radius: 25px;
+    width: 4.5rem;
+    height: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* contact */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    font-size: 1rem;
+    background-color: white;
+    border: 1.5px solid;  
+    padding: 12px 20px;
+    border-radius: 25px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  input[type=submit]:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
   /* nav styles */
@@ -85,50 +156,75 @@ html {
     margin-bottom: 7px;
     background-color: black;
     border-radius: 25px;
-    
   }
 
-.nav-links {
-  width: 100%;
-  top: 5rem;
-  left: 48px;
-  background-color: #ff9776;
-  display: none;
-  margin: 0;
-}
-
-.nav-links a {
-  display: block;
-  text-decoration: none;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: black;
-}
-
-.nav-links a:hover,
-.nav-links a:focus {
-  text-decoration: underline;
-}
-
-.expanded {
-  display: unset;
-}
-
-@media screen and (min-width: 636px) {
   .nav-links {
-    display: block;
-    position: static;
-    width: auto;
-    background: none;
+    width: 100%;
+    top: 5rem;
+    left: 48px;
+    display: none;
   }
 
   .nav-links a {
-    display: inline-block;
-    padding: 15px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus {
+    text-decoration: underline;
+  }
+
+  .expanded {
+    display: unset;
+  }
+
+  /* footer */
+
+  h1.firsttitle {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 10rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h2.secondtitle {
+    font-size: 0.7rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  @media screen and (max-width: 600px){
+    
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (min-width: 600px){
+
+    .nav-links {
+      display: block;
+      position: static;
+      width: auto;
+      background: none;
+    }
+
+    .nav-links a {
+      display: inline-block;
+      padding: 15px;
+    }
+  
+    .hamburger {
+      display: none;
+    }
   }
   
-  .hamburger {
-    display: none;
+  @media screen and (min-width: 850px){
   }
 
 }

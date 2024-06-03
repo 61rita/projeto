@@ -1,13 +1,31 @@
 ---
+import ArrowUp from "/svg/arrow-up-right.svg?raw";
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "About";
 ---
 <BaseLayout pageTitle={pageTitle}>
     <h1>About</h1>
 
-    <h2>... and my new Astro site!</h2>
+    <h2>I’m Rita Costa, a UX/UI Designer based in Lisbon.</h2>
 
-    <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+    <p>Currently doing an internship at VML and taking a post-graduate degree in Digital Experience Design at the 
+        Faculty of Fine Arts in Lisbon.</p>
 
-    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+    <p>Creative and practical, with sharp visual and aesthetic skills, and very focused on customer needs and 
+        requirements. I'm also very communicative and tend to make people feel comfortable and motivated around me. 
+        I have a degree in Design and previously worked at Associação Portuguesa da Cor, as a graphic designer. I've 
+        lived in Oslo, Norway, where I studied Graphic Design for one semester, under the Erasmus+ program, and did an 
+        Interrail trough Europe in the summer of 2022 for a whole month, where I was able to visit around 8 cities.</p>
+
+    <p>I've worked alongside many clients such as Fabrica Features, Volvo, Danone, Leroy Merlin, Millennium BCP, Dacia, 
+        Chicco, SonaeSierra, Vilamoura and many others. This past year, I also participated in various creativity contests 
+        like D&AD and Brief Aberto CCP. Passionate about illustration and Design for as long as I can remember, I love to 
+        travel, experience different cultures and I'm always looking forward for new experiences and to get out of my 
+        comfort zone.</p>
+
+    <a class="resume">Resume
+        <Fragment set:html={ArrowUp}/>
+    </a>
+
+    <a class="pdf">PDF</a>
 </BaseLayout>
