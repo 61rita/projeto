@@ -1,16 +1,25 @@
 ---
 //const platform = "github";
 //const username = "withastro";
-
-import Social from './Social.astro';
 ---
+
+<script src="https://kit.fontawesome.com/767a85f1ee.js" crossorigin="anonymous"></script>
 
 <footer>
   <h1 class="firsttitle">Get in Touch</h1>
-  <Social platform="email" username="https://www.email.com/ritasalvadocosta@gmail.com" />
-  <Social platform="linkedin" username="https://www.linkedin.com/in/ritacosta28/" />
-  <Social platform="behance" username="ritacosta28" />
-  <Social platform="github" username="61rita" />
+
+  <div class="wrap">
+    <a href="https://www.linkedin.com/in/ritacosta28/" class="btn" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://www.behance.net/ritacosta28" class="btn" target="_blank">
+      <i class="fab fa-behance"></i>
+    </a>
+    <a href="https://github.com/61rita" class="btn" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+
   <h2 class="secondtitle">© 2024 Rita Costa</h2>
 
 </footer>

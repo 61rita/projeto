@@ -1,12 +1,15 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: My Third Blog Post
-author: Astro Learner
-description: "I had some challenges, but asking in the community really helped!"
+title: Designing a New WhatsApp Feature - Case Study
+pubDate: Jan 2024
+description: "Whatsapp Smart Stickers"
+type: 'Case Study'
+team: 3 members
 image:
-    url: "https://docs.astro.build/assets/rays.webp"
-    alt: "Thumbnail of Astro rays."
-pubDate: 2022-07-15
-tags: ["astro", "learning in public", "setbacks", "community"]
+    src: '/img/smartstickers-cover.png'
+    alt: 'Smart Stickers Cover'
+tags: ["ux/ui design", "case study", "product design"]
 ---
-It wasn't always smooth sailing, but I'm enjoying building with Astro. And, the [Discord community](https://astro.build/chat) is really friendly and helpful!
+The project involved introducing AI-powered smart stickers for WhatsApp, enabling users to create and customize stickers using AI technology and a dedicated creator studio. This concept aims to enhance user engagement and personalization within the messaging platform by offering dynamic and easily customizable sticker content, outlining the development process integrating AI capabilities, and specifying the deliverables necessary for deploying this feature within WhatsApp.
+
+## Access the complete prototype here.

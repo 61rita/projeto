@@ -1,12 +1,15 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: My Second Blog Post
-author: Astro Learner
-description: "After learning some Astro, I couldn't stop!"
+title: Design System - UI Case Study
+pubDate: Jan 2024
+description: "Magique E-Commerce Platform"
+type: 'Case Study'
+team: Rita Costa
 image:
-    url: "https://docs.astro.build/assets/arc.webp"
-    alt: "Thumbnail of Astro arcs."
-pubDate: 2022-07-08
-tags: ["astro", "blogging", "learning in public", "successes"]
+    src: '/img/magique-cover.png'
+    alt: 'Magique Cover'
+tags: ["ui design", "case study", "design system"]
 ---
-After a successful first week learning Astro, I decided to try some more. I wrote and imported a small component from memory!
+This project involved creating an online store to sell a selected physical product, applying principles of usability and UI knowledge to develop a cohesive design system. This includes designing essential website pages like the homepage, product detail page, and checkout process, focusing on color schemes, typography, grids, spacing, and components. The goal is to establish an accessible visual identity that enhances user experience and reflect a coherent design system throughout the online store.
+
+## Access the complete prototype here.

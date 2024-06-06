@@ -185,6 +185,7 @@
   /* footer */
 
   h1.firsttitle {
+    text-align: center;
     font-size: 1rem;
     text-transform: uppercase;
     margin-top: 10rem;
@@ -192,10 +193,47 @@
   }
 
   h2.secondtitle {
+    text-align: center;
     font-size: 0.7rem;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
   }
+
+  .wrap{
+    text-align: center;
+    margin-top: 3rem;
+    transform: translateY(-50%);
+    width: 50%;
+    text-align: left;
+  }
+  
+  .btn{
+    display: inline-block;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    color: black;
+    box-shadow: 0px 5px 15px -5px #000;
+    border-radius: 50%;
+  }
+  
+  .btn i{
+    font-size: 24px;
+    line-height: 48px;
+  }
+  
+  .btn i:hover{
+    transform: scale(1);
+    color: #fff;
+  }
+  
+  .btn:hover{
+    background-color: black;
+    animation: animate 1s;
+  }
+  
 
   @media screen and (max-width: 600px){
     
