@@ -113,34 +113,20 @@
   input[type=submit] {
     font-size: 1rem;
     background-color: white;
+    max-width: 100px;
     border: 1.5px solid;  
     padding: 12px 20px;
     border-radius: 25px;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 1rem;  
   }
   
   input[type=submit]:hover {
     background-color: black;
-    color: white;
+    color: white
   }
   
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-  }
-  
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
   }
 
   /* nav styles */
@@ -180,6 +166,10 @@
 
   .expanded {
     display: unset;
+  }
+
+  .nav-links a.active {
+    font-weight: 700;
   }
 
   /* footer */
@@ -231,15 +221,7 @@
   }
   
 
-  @media screen and (max-width: 600px){
-    
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
-
-  @media screen and (min-width: 600px){
+  @media (min-width: 600px){
 
     .nav-links {
       display: block;
@@ -255,6 +237,28 @@
   
     .hamburger {
       display: none;
+    }
+
+    input[type=submit] {
+      margin-top: 1rem;
+    }
+
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+    
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+    
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
     }
   }
   
