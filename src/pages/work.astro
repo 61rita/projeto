@@ -17,11 +17,9 @@ const pageTitle = "Work";
       <div class="card">
         <li><a href={post.url}>
             <h1>{post.frontmatter.title}</h1>
-            <p>{post.frontmatter.description}</p>
-            <img src={post.frontmatter.image.src}>
+            <img src={post.frontmatter.image.src} width="100%" style="border-radius: 25px;">
         </a></li>
-      </div>
-      )}
+      </div>)}
   </ul>
 
 </BaseLayout>

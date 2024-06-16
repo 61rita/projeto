@@ -74,6 +74,17 @@
     height: 2.5rem;
     margin-bottom: 1.5rem;
     margin-right: 0.5rem;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .resume:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .feather-arrow-up-right:hover {
+    stroke: white;
   }
 
   .pdf {
@@ -87,6 +98,13 @@
     width: 4.5rem;
     height: 2.5rem;
     margin-bottom: 1.5rem;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .pdf:hover {
+    background-color: black;
+    color: white;
   }
 
   /* contact */
@@ -220,6 +238,10 @@
     animation: animate 1s;
   }
   
+   /* posts */
+   .img-container {
+    border-radius: 25px;
+  }
 
   @media (min-width: 600px){
 
