@@ -30,13 +30,13 @@
     font-family: 'proxima-nova', sans-serif;
     }
   
-  @media screen and (min-width: 320px){
+  @media (min-width: 320px){
 
   body {
     margin: 0 auto;
     width: 100%;
     max-width: 80ch;
-    padding: 1rem;
+    padding: 0.5rem;
     line-height: 1.5;
     font-style:normal
     }
@@ -61,6 +61,97 @@
     font-weight: 400;
   }
 
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  h5 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  /* home */
+  summary {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+    align-items: center;
+  } 
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details {
+    border-bottom: 1px solid black;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  details[open] > summary {
+    margin-bottom: 0.5rem;
+  }
+
+  summary::after {
+    content: '';
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid #15171b;
+    border-inline: 7px solid transparent;
+    transition: 0.2s;
+  }
+  
+  details[open] > summary::after {
+    transform: rotate(180deg);
+  }
+
+  /* work */
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .row img {
+    display: flex;
+    border-radius: 25px;
+    box-shadow: 0px 5px 15px -5px #000;
+    margin-top: 2rem;
+  }
+    
+  .column {
+    display: flex;
+    width: 48%;
+  }
+    
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+    
+  /* posts */
+  .img-container img {
+    border-radius: 25px;
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+  }
+  
+  .img-container img:active {
+    transform: scale(2);
+    cursor: zoom-out;
+  }
+  
   /* about */
   .resume {
     display: inline-flex;
@@ -140,7 +231,8 @@
   
   input[type=submit]:hover {
     background-color: black;
-    color: white
+    color: white;
+    cursor: pointer;
   }
   
   .col-25, .col-75, input[type=submit] {
@@ -216,7 +308,7 @@
     display: inline-block;
     width: 48px;
     height: 48px;
-    background-color: #f1f1f1;
+    background-color: white;
     margin: 10px;
     color: black;
     box-shadow: 0px 5px 15px -5px #000;
@@ -236,11 +328,6 @@
   .btn:hover{
     background-color: black;
     animation: animate 1s;
-  }
-  
-   /* posts */
-   .img-container {
-    border-radius: 25px;
   }
 
   @media (min-width: 600px){
