@@ -6,8 +6,10 @@ description: 'This project involved creating an online store to sell a selected 
 image:
     src: 'https://freight.cargo.site/t/original/i/I1826196686676056717552882317954/Cover.png'
     alt: 'Magique Cover'
+    title: 'Cover Page of the Smart Stickers Case Study'
 tags: ["ui design", "case study", "design system"]
 ---
+<div class="img-container">
 
 <img src="https://freight.cargo.site/t/original/i/U1826208948688011114134580263554/The-Challenge.png" alt="Magique Page 2"
 title="Page 2 of the Magique Case Study" width="100%">
@@ -27,4 +29,6 @@ title="Page 6 of the Magique Case Study" width="100%">
 <img src="https://freight.cargo.site/t/original/i/H1826219342635086654297405160066/Outro.png" alt="Magique Outro"
 title="Last Page of the Magique Case Study" width="100%">
 
-<p>Access the complete prototype <a href="https://www.figma.com/proto/AK1xWvIG2mUYLqRmQxC2zl/Design-System?page-id=3%253A1286&type=design&node-id=74-1282&viewport=133%252C477%252C0.16&t=OkrhLJ5RR0IK2RjT-1&scaling=min-zoom&mode=design">here.</a></p>
+</div>
+
+<p>Access the complete prototype <a href="https://www.figma.com/proto/AK1xWvIG2mUYLqRmQxC2zl/Design-System?page-id=3%253A1286&type=design&node-id=74-1282&viewport=133%252C477%252C0.16&t=OkrhLJ5RR0IK2RjT-1&scaling=min-zoom&mode=design" title="Link to the Magique Prototype">here.</a></p>

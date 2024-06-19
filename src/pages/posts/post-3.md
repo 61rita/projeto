@@ -6,8 +6,10 @@ description: 'The project involved introducing AI-powered smart stickers for Wha
 image:
     src: 'https://freight.cargo.site/t/original/i/J1826195506324243673099803064962/1.png'
     alt: 'Smart Stickers Cover'
+    title: 'Cover Page of the Magique Case Study'
 tags: ["ux/ui design", "case study", "product design"]
 ---
+<div class="img-container">
 
 <img src="https://freight.cargo.site/t/original/i/D1826269654893615844160897841794/16.png" alt="Smart Stickers Page 2"
 title="Page 2 of the Smart Stickers Case Study" width="100%">
@@ -36,4 +38,6 @@ title="Page 9 of the Smart Stickers Case Study" width="100%">
 <img src="https://freight.cargo.site/t/original/i/K1826269654875169100087188290178/14.png" alt="Smart Stickers Outro"
 title="Last Page of the Smart Stickers Case Study" width="100%">
 
-<p>Access the complete prototype <a href="https://www.figma.com/proto/c2olOAxiqFcUZvLFCz4MCj/AI-Stickers-Whatsapp?page-id=1%253A2961&type=design&node-id=198-1919&t=nq5bGnSoJ8HI9dLU-1&scaling=min-zoom&starting-point-node-id=198%253A1919">here.</a></p>
+</div>
+
+<p>Access the complete prototype <a href="https://www.figma.com/proto/c2olOAxiqFcUZvLFCz4MCj/AI-Stickers-Whatsapp?page-id=1%253A2961&type=design&node-id=198-1919&t=nq5bGnSoJ8HI9dLU-1&scaling=min-zoom&starting-point-node-id=198%253A1919" title="Link to the Smart Stickers Prototype">here.</a></p>

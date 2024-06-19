@@ -43,4 +43,4 @@ title="Last Page of the Core Case Study" width="100%">
 
 </div>
 
-<p>Access the complete prototype <a href="https://www.figma.com/proto/6ke850SQeyrFKz7WXlYM9p/CORE?page-id=0%253A1&type=design&node-id=672-9541&viewport=427%252C62%252C0.03&t=E3DHyMT3uCJELliv-1&scaling=min-zoom&starting-point-node-id=420%253A574&mode=design">here.</a></p>
+<p>Access the complete prototype <a href="https://www.figma.com/proto/6ke850SQeyrFKz7WXlYM9p/CORE?page-id=0%253A1&type=design&node-id=672-9541&viewport=427%252C62%252C0.03&t=E3DHyMT3uCJELliv-1&scaling=min-zoom&starting-point-node-id=420%253A574&mode=design" title="Link to the Core Prototype">here.</a></p>

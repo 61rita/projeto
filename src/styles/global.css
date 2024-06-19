@@ -1,34 +1,45 @@
   /* custom fonts */
-  @import url('https://fonts.cdnfonts.com/css/metropolis-2');
-  @import url("https://p.typekit.net/p.css?s=1&k=rqr0gph&ht=tk&f=139.140.175.176&a=109570628&app=typekit&e=css");
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+  @import url('https://fonts.cdnfonts.com/css/satoshi');
+
   @font-face {
-    font-family:"proxima-nova";
-    src:url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
-    font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
-    }
-    
-    @font-face {
-    font-family:"proxima-nova";
-    src:url("https://use.typekit.net/af/4de20a/00000000000000007735e604/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/4de20a/00000000000000007735e604/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/4de20a/00000000000000007735e604/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
-    font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
-    }
-    
-    @font-face {
-    font-family:"proxima-nova";
-    src:url("https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-    font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
-    }
-    
-    @font-face {
-    font-family:"proxima-nova";
-    src:url("https://use.typekit.net/af/3322cc/00000000000000007735e616/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/3322cc/00000000000000007735e616/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/3322cc/00000000000000007735e616/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
-    font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
-    }
-  
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/syne/v22/8vIH7w4qzmVxm2NL9G78HEZnMg.woff2) format('woff2');
+    unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  }
+
+  @font-face {
+    font-family: 'Satoshi-Light';
+    src: url('../fonts/Satoshi-Light.woff2') format('woff2'),
+          url('../fonts/Satoshi-Light.woff') format('woff'),
+          url('../fonts/Satoshi-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+          url('../fonts/Satoshi-Regular.woff') format('woff'),
+          url('../fonts/Satoshi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  :root {
+    --black: #1f1f1f;
+    --white: #faf0e6;
+  }
+
   html {
-    background-color: #ffff;
-    font-family: 'proxima-nova', sans-serif;
-    }
+    font-family: 'syne', sans-serif;
+    background-color: var(--white);
+  }
   
   @media (min-width: 320px){
 
@@ -38,7 +49,8 @@
     max-width: 80ch;
     padding: 0.5rem;
     line-height: 1.5;
-    font-style:normal
+    font-style:normal;
+    color: var(--black);
     }
   
   * {
@@ -48,11 +60,7 @@
   h1 {
     margin: 1rem 0;
     font-size: 3rem;
-    color: black;
-  }
-
-  h1.hello {
-    font-size: 8rem;
+    color: var(--black);
   }
 
   h2 {
@@ -75,10 +83,33 @@
   h5 {
     font-size: 1rem;
     font-weight: 400;
-    color: lightgray;
+    color: var(--black);
+    opacity: 50%;
+  }
+
+  p {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
   }
 
   /* home */
+  .hidden {
+    opacity:0;
+  }
+  .console-container {
+    font-size: 4rem;
+    font-weight: 700;
+    display:block;
+    position:relative;
+    color:var(--black);
+  }
+  .console-underscore {
+    display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
+  }
+
   summary {
     display: flex;
     justify-content: space-between;
@@ -135,7 +166,7 @@
     content: '';
     width: 0; 
     height: 0; 
-    border-top: 10px solid #15171b;
+    border-top: 10px solid #000;
     border-inline: 7px solid transparent;
     transition: 0.2s;
   }
@@ -193,7 +224,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    color: white;
+    color: var(--white);
     transition: all 0.5s;
     transform: translateY(-100%);
   }
@@ -222,7 +253,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    color: white;
+    color: var(--white);
     transition: all 0.5s;
     transform: translateY(-100%);
   }
@@ -268,16 +299,16 @@
     margin-bottom: 1.5rem;
     margin-right: 0.5rem;
     text-decoration: none;
-    color: #000;
+    color: var(--black);
   }
 
   .resume:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
   }
 
   .feather-arrow-up-right:hover {
-    stroke: white;
+    stroke: var(--white);
   }
 
   .pdf {
@@ -292,12 +323,30 @@
     height: 2.5rem;
     margin-bottom: 1.5rem;
     text-decoration: none;
-    color: #000;
+    color: var(--black);
   }
 
   .pdf:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  h2.animation {
+    color: var(--black);
+  }
+  
+  span.words:before {
+    content: 'WORDS';
+    color: var(--black);
+    animation: word-switch 5s infinite;
+  }
+  
+  @keyframes word-switch {
+    0% { content: 'books' }
+  
+    50% { content: 'cats' }
+  
+    100% { content: 'cinema' }
   }
 
   /* contact */
@@ -323,7 +372,7 @@
   
   input[type=submit] {
     font-size: 1rem;
-    background-color: white;
+    background-color: var(--white);
     max-width: 100px;
     border: 1.5px solid;  
     padding: 12px 20px;
@@ -332,8 +381,8 @@
   }
   
   input[type=submit]:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
     cursor: pointer;
   }
   
@@ -352,7 +401,7 @@
     width: 40px;
     height: 5px;
     margin-bottom: 7px;
-    background-color: black;
+    background-color: var(--black);
     border-radius: 25px;
   }
 
@@ -368,7 +417,7 @@
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: uppercase;
-    color: black;
+    color: var(--black);
   }
 
   .nav-links a:hover,
@@ -410,9 +459,9 @@
     display: inline-block;
     width: 48px;
     height: 48px;
-    background-color: white;
+    background-color: #fff;
     margin: 10px;
-    color: black;
+    color: var(--black);
     box-shadow: 0px 5px 15px -5px #000;
     border-radius: 50%;
   }
@@ -428,7 +477,7 @@
   }
   
   .btn:hover{
-    background-color: black;
+    background-color: var(--black);
     animation: animate 1s;
   }
 
