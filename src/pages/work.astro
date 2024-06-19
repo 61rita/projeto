@@ -18,22 +18,40 @@ const pageTitle = "Work";
 
     {Post1.map((post) => 
       <div class="column">
-        <a href={post.url}>
+        <div class="container">
+          <a href={post.url}>
             <img src={post.frontmatter.image.src} width="100%" style="border-radius: 25px;">
-        </a>
+              <div class="caption">
+  		          <h3>Design Jobs - UX/UI Case Study</h3>
+  		          <p>Building a website for designers to discover which job is most suitable for them</p>
+  	          </div>
+          </a>
+        </div>
       </div>)}
 
     {Post2.map((post) => 
       <div class="column">
-        <a href={post.url}>
+        <div class="container">
+          <a href={post.url}>
             <img src={post.frontmatter.image.src} width="100%" style="border-radius: 25px;">
-        </a>
+              <div class="caption">
+  		          <h3>Design System - UI Case Study</h3>
+  		          <p>Making a complete Design System for an E-Commerce Platform Website</p>
+  	          </div>
+          </a>
+        </div>
       </div>)}
 
     {Post3.map((post) => 
+      <div class="container">
         <a href={post.url}>
-            <img src={post.frontmatter.image.src} width="100%" style="border-radius: 25px;">
+          <img src={post.frontmatter.image.src} width="100%" style="border-radius: 25px;">
+            <div class="caption-2">
+  		        <h3>Designing a New WhatsApp Feature - Case Study</h3>
+  		        <p>Design a completely new feature for an already existing app</p>
+  	        </div>
         </a>
+      </div>
       )}
 
     </div>

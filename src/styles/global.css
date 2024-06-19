@@ -75,6 +75,7 @@
   h5 {
     font-size: 1rem;
     font-weight: 400;
+    color: lightgray;
   }
 
   /* home */
@@ -95,6 +96,35 @@
     border-bottom: 1px solid black;
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
+  }
+
+  details > div {
+    overflow: hidden;
+    display: grid;
+    animation-duration: 0.2s;
+  }
+
+  details > .animation {
+    animation-name: grid-expand;
+    animation-timing-function: ease-out;
+  }
+
+  details > .collapsing {
+    animation-direction: reverse;
+    animation-timing-function: ease-in;
+  }
+  
+  details > div > div {
+    min-height: 0;
+  }
+
+  @keyframes grid-expand {
+  0% {
+    grid-template-rows: 0fr;
+  }
+  100% {
+    grid-template-rows: 1fr;
+  }
   }
 
   details[open] > summary {
@@ -126,12 +156,12 @@
     display: flex;
     border-radius: 25px;
     box-shadow: 0px 5px 15px -5px #000;
-    margin-top: 2rem;
   }
     
   .column {
     display: flex;
     width: 48%;
+    margin-bottom: 2rem;
   }
     
   .row::after {
@@ -139,7 +169,79 @@
     clear: both;
     display: table;
   }
-    
+
+  .container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    width: 100%;
+  }
+  
+  .container img {
+    width: 100%;
+    transition: all .5s;
+  }
+  
+  .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    color: white;
+    transition: all 0.5s;
+    transform: translateY(-100%);
+  }
+
+  .caption h3 {
+    margin: 0;
+  }
+
+  .caption p {
+    font-size: 14px;
+  }
+
+  .container:hover .caption {
+    background-color: rgba(0,0,0,0.9);
+    transform: translateY(0);
+  }
+
+  .caption-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    color: white;
+    transition: all 0.5s;
+    transform: translateY(-100%);
+  }
+
+  .caption-2 h3 {
+    margin: 0;
+    font-size: 2.7rem;
+  }
+
+  .caption-2 p {
+    font-size: 18px;
+  }
+
+  .container:hover .caption-2 {
+    background-color: rgba(0,0,0,0.9);
+    transform: translateY(0);
+  }
+
+
   /* posts */
   .img-container img {
     border-radius: 25px;
