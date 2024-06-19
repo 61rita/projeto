@@ -33,7 +33,7 @@
 
   :root {
     --black: #1f1f1f;
-    --white: #faf0e6;
+    --white: #f7f0e9;
   }
 
   html {
@@ -181,12 +181,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 2rem;
   }
 
   .row img {
     display: flex;
     border-radius: 25px;
-    box-shadow: 0px 5px 15px -5px #000;
   }
     
   .column {
@@ -206,6 +206,7 @@
     overflow: hidden;
     border-radius: 25px;
     width: 100%;
+    box-shadow: 0px 5px 15px -5px #000;
   }
   
   .container img {
@@ -219,7 +220,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    padding: 2.5rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -230,11 +231,12 @@
   }
 
   .caption h3 {
+    font-size: 18px;
     margin: 0;
   }
 
   .caption p {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .container:hover .caption {
@@ -248,7 +250,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    padding: 4rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,11 +262,11 @@
 
   .caption-2 h3 {
     margin: 0;
-    font-size: 2.7rem;
+    font-size: 28px;
   }
 
   .caption-2 p {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .container:hover .caption-2 {
@@ -339,6 +341,7 @@
     content: 'WORDS';
     color: var(--black);
     animation: word-switch 5s infinite;
+    font-weight: 700;
   }
   
   @keyframes word-switch {
@@ -394,21 +397,21 @@
   .hamburger {
     padding-right: 20px;
     cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   
   .hamburger .line {
     display: block;
-    width: 40px;
+    width: 30px;
     height: 5px;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     background-color: var(--black);
     border-radius: 25px;
   }
 
   .nav-links {
     width: 100%;
-    top: 5rem;
-    left: 48px;
     display: none;
   }
 
@@ -416,8 +419,8 @@
     display: block;
     text-decoration: none;
     font-size: 1.2rem;
-    text-transform: uppercase;
     color: var(--black);
+    margin-top: 0.5rem;
   }
 
   .nav-links a:hover,
@@ -434,7 +437,6 @@
   }
 
   /* footer */
-
   h1.firsttitle {
     text-align: center;
     font-size: 1rem;
@@ -483,46 +485,72 @@
 
   @media (min-width: 600px){
 
-    .nav-links {
-      display: block;
-      position: static;
-      width: auto;
-      background: none;
-    }
+  /* nav styles */
+  .nav-links {
+    display:block;
+    position: static;
+    width: auto;
+    background: none;
+    margin-top: 2rem;
+  }
 
-    .nav-links a {
-      display: inline-block;
-      padding: 15px;
-    }
-  
-    .hamburger {
-      display: none;
-    }
-
-    input[type=submit] {
-      margin-top: 1rem;
-    }
-
-    .col-25 {
-      float: left;
-      width: 25%;
-      margin-top: 6px;
-    }
-    
-    .col-75 {
-      float: left;
-      width: 75%;
-      margin-top: 6px;
-    }
-    
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
+  .nav-links a {
+    display: inline-block;
+    margin-right: 2rem;
   }
   
-  @media screen and (min-width: 850px){
+  .hamburger {
+    display: none;
+  }
+
+  /* work */
+  .caption {
+    padding: 2.5rem;
+  }
+
+  .caption h3 {
+    margin: 0;
+  }
+
+  .caption p {
+    font-size: 14px;
+  }
+
+  .caption-2 {
+    padding: 4rem;
+  }
+
+  .caption-2 h3 {
+    margin: 0;
+    font-size: 2.7rem;
+  }
+
+  .caption-2 p {
+    font-size: 18px;
+  }
+
+  /*contact*/
+  input[type=submit] {
+    margin-top: 1rem;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+    
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+    
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   }
 
 }
